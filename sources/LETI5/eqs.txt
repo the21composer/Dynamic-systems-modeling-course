@@ -1,0 +1,28 @@
+\begin{array}{lcl}
+\lim\frac{|x_{n+1}-x^*|}{|x_n-x^*|} = \lim\frac{|\varphi(x_n) - \varphi(x^*)|}{|x_n - x^*|} &=& \lim|\varphi'(\xi_n)|,\ \xi_n\in[x_n,\ x^*]\\
+&=& |\varphi'(x^*)|
+\end{array}
+
+
+\varphi(x_n) = \varphi(x^*) + \varphi'(x^*)(x_n - x^*) + \frac{1}{2}\varphi''(\xi_n)(x_n-x^*)^2,\ \xi_n\in [x_n,x^*]
+
+\varphi(x) = x - \frac{f(x)}{f'(x)}
+
+\varphi'(x) = \frac{f(x)f''(x)}{f'(x)^2}
+
+	f(x) = \sqrt{x}: \quad x_{n+1} = x_n - \frac{\sqrt{x_n}}{-1 / (2\sqrt{x_n})} = -x_n
+
+f(x) = x^2: \quad x_{n+1} = x_n - \frac{x_n^2}{2x_n} = \frac{x_n}{2}
+
+\sqrt{1+x} = 1 + \frac{x}{2} - \frac{x^2}{8} + \frac{x^3}{16} - \frac{5x^4}{128} + \frac{7x^5}{256} + \cdots  
+
+x = \sqrt{a}
+
+\sin(\pi + \varepsilon) = \sin(\varepsilon)
+\varphi(x) = \frac{a}{x} ?
+
+f(x) = a - x^2 = 0
+
+\phi(x) = x - \frac{f(x)}{f'(x)} = x + \frac{a+x^2}{2x} = \frac{1}{2}\left(x + \frac{a}{x}\right)
+
+\varphi(x) = x - \frac{ax^2-1}{2ax} = x - \frac{x}{2}(ax^2-1)

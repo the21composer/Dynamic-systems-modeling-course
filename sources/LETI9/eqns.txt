@@ -1,0 +1,93 @@
+D = \{(t, x)\} \subset \mathbb{R}^2
+
+(t_0, x_0) \in D
+
+f: D \rightarrow \mathbb{R}, \ \ f \in C(D)
+
+I \subset \mathbb{R} : t_0 \in I
+
+x(t): I \rightarrow \mathbb{R}
+
+\frac{\mathrm{d}x}{\mathrm{d}t} = f(t, x(t)),\ t \in I
+
+
+(t, x(t)) \in D,\ t \in I
+
+x(t_0) = x_0
+
+(t_0, x_0) \in R,\, (t_0, x_0) \not\in \partial R
+
+
+R = \{(t, x) : |t - t_0| \leqslant a, \, |x - x_0| \leqslant b\}\ \ (a, b > 0)
+
+f \in C(R)
+
+M = \max_{(t, x)\in R}|f(t, x)|
+
+\alpha = \min\left(a, \frac{b}{M}\right)
+
+|t - t_0| \leqslant \alpha
+
+x(t) \in C^1
+
+\frac{\mathrm{d}x}{\mathrm{d}t} = f(t, x(t))
+
+(t, x(t)) \in R
+
+
+\exists \delta_\varepsilon > 0 : |f(t, x) - f(\widetilde{t},\widetilde{x})| \leqslant \varepsilon
+
+(t, x) \in R,\ (\widetilde{t}, \widetilde{x}) \in R,\ |t - \widetilde{t}| \leqslant \delta_\epsilon,\ |t - \widetilde{t}| \leqslant \delta_\epsilon
+
+|t_{k+1}-t_k| \leqslant \min\left(\delta_\varepsilon,\frac{\delta_\varepsilon}{M}\right)
+
+\varphi(t) = \varphi(t_{k-1}) + f(t_{k-1}, \varphi(t_{k-1}))(t - t_{k-1})
+
+|t - t_k| < \delta_\varepsilon,\ |\varphi(t) - \varphi(t_k)| < M \frac{\delta_\varepsilon}{M}=\delta_\varepsilon
+
+\Rightarrow |\varphi'(t) - f(t, \varphi(t))| \leqslant \varepsilon, \ \ t\in [0,\alpha] \backslash \{t_k\}
+
+\varphi \in C^1_p(R)
+
+
+\{\varepsilon_n\} \rightarrow \{\varphi_n\}
+
+|\varphi_n(t)| \leqslant |x_0| + b
+
+\forall \epsilon > 0\ \exists \Delta_\epsilon > 0: |\varphi_n(t) - \varphi_n(\widetilde{t})| < \epsilon,\ \forall n,\ |t - \widetilde{t}| < \Delta
+
+\left(\Delta_\epsilon = \frac{\epsilon}{M}\right)
+
+\forall \epsilon > 0\ \exists N: |\varphi_n(t) - \varphi_m(t)| < \epsilon,\ \forall n,m > N
+
+\{r_k\} \subset I
+
+\{\varphi_n(r_1)\}
+
+\Rightarrow \exists \{\varphi^{(1)}_{m_i}\} \subset \{\varphi_n\} : \{\varphi^{(1)}_{m_i}(r_1)\} 
+
+\exists \{\varphi^{(2)}_{m_i}\} \subset \{\varphi^{(1)}_{m_i}\} : \{\varphi^{(2)}_{m_i}(r_2)\} 
+
+\phi_k = \varphi^{(k)}_{m_k},
+
+\forall \epsilon > 0,\ r_k \in I\ \  \exists N_\epsilon(r_k) : |\varphi_n(r_k) - \varphi_m(r_k)| < \varepsilon, \ n, m > N_\epsilon(r_k)
+
+\forall \epsilon > 0,\ r_k \in I\ \  \exists N_\epsilon(r_k) : |\phi_n(r_k) - \phi_m(r_k)| < \varepsilon, \ n, m > N_\epsilon(r_k)
+
+\exists \Delta_\epsilon > 0: |\phi_n(t) - \phi_n(\widetilde{t})| < \epsilon,\ \forall n,\ |t - \widetilde{t}| < \Delta
+
+\begin{array}{ccl}
+|\phi_n(t) - \phi_m(t)| &\leqslant& |\phi_n(t) - \phi_n(\widetilde{r_k})| + \\
+                        &  & |\phi_n(\widetilde{r_k}) - \phi_m(\widetilde{r_k})| + \\
+                        &  & |\phi_m(\widetilde{r_k}) - \phi_n(t)| = 3\epsilon
+\end{array}
+
+n, m > N_\epsilon(r_i), \forall i
+
+\lim\limits_{n\to\infty} \varepsilon_n = 0
+
+\exists \{\varphi_{n_k}\} \subset \{\varphi_n\} : \{\varphi_{n_k}\} \to \varphi
+\varphi_{n_k}(t) = x_0 + \int_{t_0}^t (f(\tau, \varphi_{n_k}(\tau)) + \Delta_{n_k}(\tau)) d\tau
+
+
+f(t, \varphi_{n_k}(t)) \to f(t, \varphi(t))

@@ -1,0 +1,143 @@
+\mu = \lim_{\varepsilon\to 0}\sup_{||\Delta x|| < \varepsilon}\frac{||\Delta f|| / ||f||}{||\Delta x|| / ||x||}
+
+\nu = \lim_{\varepsilon\to 0}\sup_{||\Delta x|| < \varepsilon}\frac{||\Delta f||}{||\Delta x||}
+
+\nu = \lim_{|\Delta x|\to 0}\frac{|\Delta f|}{|\Delta x|} = f'
+
+
+\nu = \lim_{|\Delta x|\to 0}\frac{|\Delta f| / |f|}{|\Delta x| / |x|} = f'
+
+
+\arraycolsep=1.4pt\def\arraystretch{1.5}
+\begin{array}{ccc}
+\mu_{\log{x}} &=& \frac{1}{|\log x|}\\
+\nu_{\log{x}} &=& \frac{1}{|x|}
+\end{array}
+
+
+\arraycolsep=1.4pt\def\arraystretch{1.2}
+\begin{array}{lcc}
+\mu_{\sqrt{x}} &=& 1/2\\
+\mu_{1/x} &=& 1\\
+\mu_{x^n} &=& n\\
+\mu_{e^x} &=& x\\
+\mu_{\sin x} &=& \frac{x}{\tan x}
+\end{array}
+
+f(x,y) = x^2 + y^2
+
+\delta x = \frac{\varepsilon_x}{x} \leqslant \epsilon, \ \ \ \delta y = \frac{\varepsilon_y}{y} \leqslant \epsilon
+
+
+\begin{aligned}
+\delta{x} = \frac{\tilde{x} - x}{x} = \frac{\varepsilon_x}{x}\ \ \ |\delta x| < \epsilon\\
+\delta{y} = \frac{\tilde{y} - y}{y} = \frac{\varepsilon_y}{x}\ \ \ |\delta y| < \epsilon\\
+\end{aligned}
+
+
+
+
+
+\begin{array}{l}
+x \otimes x = (x \times x)(1 + \delta_1), \ \ |\delta_1| \leqslant \epsilon\\
+y \otimes y = (y \times y)(1 + \delta_2), \ \ |\delta_2| \leqslant \epsilon\\
+(x \otimes x)\ominus(y \otimes y) = (x^2(1+\delta_1) - y^2(1+\delta_2))(1+\delta_3), \ \ |\delta_3| \leqslant \epsilon\\
+\end{array}
+
+\begin{array}{l}
+\delta((x \otimes x)\ominus(y \otimes y)) = \frac{(x^2(1+\delta_1) - y^2(1+\delta_2))(1+\delta_3) - (x^2 - y^2)}{x^2 - y^2}\\
+\approx \frac{x^2 \delta_1 - y^2 \delta_2 + (x^2 - y^2)\delta_3}{x^2 - y^2} = \delta_3 + \delta_1 + \frac{y^2(\delta_1 - \delta_2)}{x^2 - y^2}
+\end{array}
+
+\delta((x \oplus y)\otimes(x \ominus y)) = \frac{(x+y)(1+\delta_1)(x-y)(1+\delta_2)(1+\delta_3) - (x^2 - y^2)}{x^2 - y^2} \approx \delta_1 + \delta_2 + \delta_3
+
+
+\mu = \lim_{|\Delta x|\to 0}\frac{|\Delta f| / |f|}{|\Delta x| / |x|} = \left|\frac{f'x}{f}\right|
+
+
+
+P(x) = \sum_{k=0}^n a_k x^k = 0
+
+\frac{\mathrm{d}x}{\mathrm{d}a_k} = \frac{1}{P'} \frac{\mathrm{d}P}{\mathrm{d}a_k} \Rightarrow \lim_{|\Delta a_k|\to 0}\frac{|\Delta x| / |x|}{|\Delta a_k| / |a_k|} = \left|\frac{a_k x^{k-1}}{P'}\right|	
+
+x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+
+
+\begin{aligned}
+\mu_a = &\lim_{\Delta a\to 0}\frac{|\Delta x| / |x|}{|\Delta a| / |a|} = \left|\frac{x x'_a}{a}\right| = \frac{1}{2}\left|\frac{\pm b}{\sqrt{D}}-1\right|\\
+\mu_b = &\left|\frac{x x'_a}{a}\right| = \left|\frac{b}{\sqrt{D}}\right|\\
+\mu_c = &\left|\frac{x x'_c}{c}\right| = \left|\frac{2ac}{\sqrt{D}(-\sqrt{D}\pm b)}\right|
+\end{aligned}
+
+\begin{aligned}
+ x_1 &= \frac{2c}{-b - \mathrm{sgn} (b) \,\sqrt {D}} \\
+ x_2 &= \frac{-b - \mathrm{sgn}  (b) \,\sqrt {D}}{2a} = \frac{c}{ax_1} \\
+\end{aligned}
+
+
+
+(A + \Delta A)(\mathbf{x} + \Delta \mathbf{x}) = \mathbf{b} + \Delta b
+
+
+\Delta A \Delta b\approx\mathbf{0} \Rightarrow \frac{||\Delta \mathbf{x}||}{||\mathbf{x}||}\leqslant \mu \left(\frac{||\Delta A||}{||A||} + \frac{||\Delta b||}{||b||}\right), \ \ \mu = ||A||\cdot||A^{-1}|| \geqslant 1
+
+\mu = \frac{\lambda_{\max} A}{\lambda_{\min} A}
+\begin{pmatrix}
+1 & 1\\
+1 & 1.001
+\end{pmatrix}^{-1} =
+\begin{pmatrix}
+1001 & -1000 \\
+-1000 & 1000
+\end{pmatrix}
+
+
+||A||_2 \cdot ||A^{-1}||_2 \approx 4000
+
+A = \begin{pmatrix}
+0.001 & 1 \\
+1 & 1
+\end{pmatrix}, \ \ \ A^{-1} =
+\begin{pmatrix}
+-1.001 & 1.001 \\
+1.001 & -0.001001
+\end{pmatrix}, \ \ \ \mu(A) = ||A||_2\cdot ||A^-1||_2 \approx 3.46
+
+U = \begin{pmatrix}
+0.001 & 1 \\
+0 & -999
+\end{pmatrix}, \ \ \ U^{-1} \approx
+\begin{pmatrix}
+1000 & 1.001 \\
+0 & -0.001001
+\end{pmatrix}, \ \ \ \mu(U) = ||U||_2\cdot ||U^-1||_2 \approx 1414
+
+
+PA = \begin{pmatrix}
+1 & 1\\
+0.001 & 1
+\end{pmatrix}, \ \ \ 
+U = \begin{pmatrix}
+1 & 1 \\
+0 & 0.999
+\end{pmatrix}, \ \ \ U^{-1} \approx
+\begin{pmatrix}
+1 & -1.001 \\
+0 & 1.001 \end{pmatrix}, \ \ \ \mu(U) = ||U||_2\cdot ||U^-1||_2 \approx 3.46
+
+
+w(x) = \prod_{i=1}^{20} (x - i) = (x-1)(x-2) \cdots (x-20)
+
+A\mathbf{x} = \mathbf{b}\ \rightarrow\ M^{-1}\!\!A\mathbf{x} = M^{-1}\mathbf{b}, \quad \mu(M^{-1}\!\!A) < \mu(A)
+
+P\!A = LU \ \Rightarrow \ P\!LU \mathbf{x} = P\mathbf{b},\quad \mu(LU) \leqslant \mu(A)
+
+M = E:\ \mu(M^{-1}\!\!A) = \mu(A)
+
+M = A:\ \mu(M^{-1}\!\!A) = 1
+
+M = (L + D)D^{-1}(L+D)^T
+
+
+
+\Delta A \Delta b\approx\mathbf{0} \Rightarrow \frac{||\Delta \mathbf{x}||}{||\mathbf{x}||}\leqslant \mu \left(\frac{||\Delta A||}{||A||} + \frac{||\Delta b||}{||b||}\right), \ \ \mu = ||A||\cdot||A^{-1}|| \geqslant 1

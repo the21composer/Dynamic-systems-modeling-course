@@ -1,0 +1,21 @@
+f(x) = \cos 2x + 2 \sin^2 x
+
+f'(x) = \frac{f(x + h) - f(x)}{h} + O(h)
+
+f'(x) = \frac{f(x + h) - f(x - h)}{2h} + O(h^2)
+
+f'(x) = \sin 2x \cdot 2 + 2 (2\sin x \cdot \cos x)
+
+
+\begin{aligned}
+  \left\langle u,u'\right\rangle + \left\langle v,v'\right\rangle &= \left\langle u + v, u' + v' \right\rangle \\
+  \left\langle u,u'\right\rangle - \left\langle v,v'\right\rangle &= \left\langle u - v, u' - v' \right\rangle \\
+  \left\langle u,u'\right\rangle * \left\langle v,v'\right\rangle &= \left\langle u v, u'v + uv' \right\rangle \\
+  \left\langle u,u'\right\rangle / \left\langle v,v'\right\rangle &= \left\langle \frac{u}{v}, \frac{u'v - uv'}{v^2} \right\rangle \quad ( v\ne 0) \\
+                               \sin\left\langle u,u'\right\rangle &= \left\langle \sin(u) , u' \cos(u) \right\rangle \\
+                               \cos\left\langle u,u'\right\rangle &= \left\langle \cos(u) , -u' \sin(u) \right\rangle \\
+                               \exp\left\langle u,u'\right\rangle &= \left\langle \exp u , u' \exp u \right\rangle \\
+                               \log\left\langle u,u'\right\rangle &= \left\langle \log(u) , u'/u \right\rangle \quad (u>0) \\
+                                 \left\langle u,u'\right\rangle^k &= \left\langle u^k , k u^{k - 1} u' \right\rangle \quad (u \ne 0) \\
+                    \left| \left\langle u,u'\right\rangle \right| &= \left\langle \left| u \right| , u' \mbox{sign} u \right\rangle \quad (u \ne 0)
+\end{aligned}
