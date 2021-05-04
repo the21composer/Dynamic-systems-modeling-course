@@ -7,4 +7,4 @@
 * Л6 Одношаговые явные методы численного интегрирования - `Done, correction needed`
 * Л9 Методы Адамса - `Done, waiting for review`
 * Л10 Численные методы решения нелинейных уравнений - `Done, waiting for review`
-* Л11 Методы решения СЛАУ - `In progress, 66%`
+* Л11 Методы решения СЛАУ - `Done, waiting for review`
