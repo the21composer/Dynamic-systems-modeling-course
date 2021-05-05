@@ -8,3 +8,4 @@
 * Л9 Методы Адамса - `Done, waiting for review`
 * Л10 Численные методы решения нелинейных уравнений - `Done, waiting for review`
 * Л11 Методы решения СЛАУ - `Done, waiting for review`
+* Л12 Обусловленность и устойчивость - `Done, waiting for review`
