@@ -1,0 +1,74 @@
+\mathbf{k}_i = \mathbf{f}\left(\mathbf{x}(t) + h \sum\nolimits_{j=1}^s a_{ij}\mathbf{k}_j\right), \quad i = 1..s \\
+
+\mathbf{x}(t+h) = \mathbf{x}(t) + h\sum\limits_{i=1}^{s}{b}_{i}\mathbf{k}_i \ [\ +\ {\varepsilon}]
+
+  \begin{array}{|cccc} 
+    a_{11}    & a_{12} & \dots & a_{1s}\\
+    a_{21}     & a_{22} & \dots & a_{2s}\\
+     \vdots     & \vdots     &  \ddots  & \vdots \\
+     a_{s1}     & a_{s2}   &   \dots    & a_{ss} \\
+    \hline
+     b_1        & b_2       &  \dots     & b_s\\
+
+  \end{array}
+
+\mathbf{x}(t+h) = \mathbf{x}(t) + h\mathbf{f}(\mathbf{x}(t+h)) + O(h^2)
+
+f(x) = -kx
+
+x(t + h) \approx x(t)(1 - kh) 
+
+x(t) \approx x(0)(1-kh)^{t/h}
+
+|1-kh| < 1
+
+x(t+h) \approx x(t) / (1 + kh)
+
+x(t) \approx x(0) (1 + kh)^{-t/h}
+
+  \begin{array}{|c} 
+    1\\
+    \hline
+1\\
+  \end{array}
+
+
+\mathbf{k}_1 = \mathbf{f}\left(\mathbf{x}(t) + \frac{h}{2}\mathbf{k}_1\right)
+
+  \begin{array}{|c} 
+    1/2\\
+    \hline
+1\\
+  \end{array}
+
+\mathbf{x}(t+h) = \mathbf{x}(t) + h\mathbf{k}_1 + o(h^2) 
+
+
+\def\arraystretch{1.2}
+\begin{array}{lcl}
+\mathbf{k_1} &=& \mathbf{f}(\mathbf{x}) + \frac{h}{2}\mathbf{f}'(\mathbf{x})\mathbf{k}_1 + O(h^2) \\
+  &= & \mathbf{f}(\mathbf{x}) + \frac{h}{2}\mathbf{f}'(\mathbf{x})(\mathbf{f}(\mathbf{x}) + O(h)) \\
+  &= & \mathbf{f}(\mathbf{x}) + \frac{h}{2}\mathbf{f}'(\mathbf{x})\mathbf{f}(\mathbf{x}) + O(h^2)\\
+\end{array}
+
+\def\arraystretch{1.2}
+\begin{array}{lcl}
+\mathbf{x}(t+h) &=& \mathbf{x}(t) + h \mathbf{\dot x}(t) + \frac{h^2}{2} \mathbf{\ddot x}(t) + o(h^2) \\
+  &=& \mathbf{x}(t) + h \mathbf{f}(\mathbf{x}(t)) + \frac{h^2}{2} \mathbf{f'}(\mathbf{x}(t)) \mathbf{f}(\mathbf{x}(t)) + o(h^2) \\
+  &=& \mathbf{x}(t) + h \mathbf{k}_1 + o(h^2)
+\end{array}
+
+\def\arraystretch{1.2}
+\begin{array}{ll}
+ \mathbf{k}_1 =& \mathbf{f}(\mathbf{x}(t)) \\
+ \mathbf{k}_2 =& \mathbf{f}(\mathbf{x}(t) + \frac{h}{2}(\mathbf{k}_1 + \mathbf{k}_2))\\
+\end{array}
+
+\mathbf{x}(t+h) = \mathbf{x}(t) + \frac{h}{2}(\mathbf{k}_1 + \mathbf{k}_2)
+
+  \begin{array}{|cc} 
+    0   & 0 \\
+    1/2 & 1/2\\
+    \hline
+     1/2 & 1/2\\
+  \end{array}
