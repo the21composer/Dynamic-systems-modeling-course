@@ -8,6 +8,7 @@
 * Л9 Методы Адамса - `Done, correction needed`
 * Л10 Численные методы решения нелинейных уравнений - `Done and checked`
 * Л11 Методы решения СЛАУ - `Done and checked`
-* Л12 Обусловленность и устойчивость - `Done, waiting for review`
-* Неявные методы Рунге-Кутты - `Done, waiting for review`
+* Л12 Обусловленность и устойчивость - `Done and checked`
+* Неявные методы Рунге-Кутты - `Done and checked`
+* Ошибки методов Рунге-Кутты - `Done, waiting for review`
 
