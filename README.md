@@ -11,4 +11,5 @@
 * Л12 Обусловленность и устойчивость - `Done and checked`
 * Неявные методы Рунге-Кутты - `Done and checked`
 * Ошибки методов Рунге-Кутты - `Done, waiting for review`
+* Л13 Дифференцирование - `Done, waiting for review`
 
