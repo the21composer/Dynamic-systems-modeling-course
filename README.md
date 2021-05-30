@@ -10,6 +10,6 @@
 * Л11 Методы решения СЛАУ - `Done and checked`
 * Л12 Обусловленность и устойчивость - `Done and checked`
 * Неявные методы Рунге-Кутты - `Done and checked`
-* Ошибки методов Рунге-Кутты - `Done, waiting for review`
+* Ошибки методов Рунге-Кутты - `Done and checked`
 * Л13 Дифференцирование - `Done, waiting for review`
 
