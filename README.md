@@ -12,4 +12,5 @@
 * Неявные методы Рунге-Кутты - `Done and checked`
 * Ошибки методов Рунге-Кутты - `Done and checked`
 * Л13 Дифференцирование - `Done and checked`
+* Обобщение методов Рунге-Кутты - `Done, waiting for response`
 
